@@ -15,7 +15,20 @@
 
 <body>
     <div class="container">
-
+        <h1 class="text-center mt-3">CENSURATORE</h1>
+        <form action="badwords.php" method="GET" class="my-5">
+            <div class="mb-2">
+                <label for="text" class="form-label">Inserisci il testo</label>
+                <textarea class="form-control" id="text" rows="3" name="text"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="badword" class="form-label">Quale parola vuoi censurare?</label>
+                <input type="text" class="form-control" id="badword" placeholder="Scrivi parola da censurare"
+                    name="badword">
+            </div>
+            <button type="submit" class="btn btn-primary me-2">Invia</button>
+            <button type="reset" class="btn btn-danger">Annulla</button>
+        </form>
         
     </div>
 </body>
